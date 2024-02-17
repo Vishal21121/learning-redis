@@ -1,6 +1,6 @@
 import { Redis } from "ioredis"
 
-export const client = new Redis()
+const client = new Redis()
 
 async function init() {
     await client.set("msg:2", "Hello, World!")
